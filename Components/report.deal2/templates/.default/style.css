@@ -1,0 +1,466 @@
+.devino-filter {
+    background: #eef2f4;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 0 15px
+}
+
+.crm-report-column-funnel-wrapper {
+    display: flex
+}
+
+.crm-report-column-funnel-card {
+    padding: 0 19px;
+    border-left: 1px solid rgba(224, 224, 224, .6)
+}
+
+.crm-report-column-funnel-card-title.crm-report-column-funnel-th {
+    padding-bottom: 8px;
+    font: 20px OpenSans-SemiBold, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+.crm-report-column-funnel-card-subtitle {
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #a8adb4;
+    opacity: .84
+}
+
+.crm-report-column-funnel-card-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline
+}
+
+.crm-report-column-funnel-card-info-box {
+    display: flex;
+    align-items: baseline
+}
+
+.crm-report-column-funnel-card-info-box:first-child {
+    margin: 0 8% 0 0
+}
+
+.crm-report-column-funnel-card-info-box:last-child {
+    margin: 0
+}
+
+.crm-report-column-funnel-card-info-value-box {
+    display: flex;
+    align-items: baseline;
+    max-width: 100%;
+    font: 1.8vw OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+.crm-report-column-funnel-card-info-percent {
+    font: 1.2vw OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #ff5752
+}
+
+.crm-report-column-funnel-card-info-value {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.crm-report-column-funnel-card-info-item {
+    border-right: 1px solid rgba(224, 224, 224, .6);
+    margin: 0 15px 0 0;
+    padding: 0 15px 0 0
+}
+
+.crm-report-column-funnel-card-info-item:last-child {
+    border-right: none;
+    margin: 0;
+    padding: 0
+}
+
+.crm-report-column-funnel-table {
+    margin: 0 0 0 47px;
+    width: -webkit-calc(100% - 47px);
+    width: calc(100% - 47px);
+    border-collapse: collapse
+}
+
+.crm-report-column-funnel-td, .crm-report-column-funnel-th, .crm-report-column-funnel-tr {
+    padding: 0 1.9%;
+    border-left: 1px solid rgba(224, 224, 224, .6);
+    vertical-align: bottom;
+    text-align: left;
+    word-wrap: break-word
+}
+
+.crm-report-column-funnel-widget {
+    position: relative
+}
+
+.crm-report-column-funnel-widget .crm-report-column-funnel-td, .crm-report-column-funnel-widget.crm-report-column-funnel-tr {
+    position: relative;
+    padding: 0;
+    border-left: none;
+    box-sizing: border-box
+}
+
+.crm-report-column-funnel-td .crm-report-column-funnel-card-info:first-child {
+    margin: 0 0 16px 0
+}
+
+.crm-report-column-funnel-td .crm-report-column-funnel-card-info:last-child {
+    margin: 0
+}
+
+.crm-report-column-funnel-through-funnel-widget {
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 3;
+    margin: 0 0 17px 0;
+    height: 300px;
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px solid rgba(224, 224, 224, .6);
+    overflow: hidden
+}
+
+.crm-report-column-funnel-through-funnel-widget-item {
+    display: block;
+    width: 100%;
+    height: 0;
+    border-top: 2px solid #fff;
+    transition: height .5s
+}
+
+.crm-report-column-funnel-through-funnel-widget-item-clickable:hover {
+    cursor: pointer
+}
+
+.crm-report-column-funnel-through-funnel-widget-2 .crm-report-column-funnel-through-funnel-widget-item {
+    height: 17px
+}
+
+.crm-report-column-funnel-through-funnel-widget-columns {
+    flex-direction: row;
+    align-items: flex-end
+}
+
+.crm-report-column-funnel-through-funnel-widget-columns .crm-report-column-funnel-through-funnel-widget-item {
+    margin: 0 4px 0 0;
+    min-width: 3px;
+    border-bottom: none;
+    border-radius: 2px 2px 0 0
+}
+
+.crm-report-column-funnel-through-funnel-widget-title {
+    display: block;
+    margin: 0 0 1px 0;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: rgba(51, 51, 51, .56);
+    text-align: right;
+    z-index: 1
+}
+
+.crm-report-column-funnel-through-funnel-widget-value-box {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end
+}
+
+.crm-report-column-funnel-through-funnel-widget-value {
+    margin: 0 4px 0 0;
+    font: 1.8vw/1.8vw OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+.crm-report-column-funnel-through-funnel-widget-percent {
+    font: 1.5vw/1.5vw OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #828b95
+}
+
+.crm-report-column-funnel-modal {
+    display: inline-block;
+    top: 350px;
+    padding: 15px 16px 1px 13px;
+    min-width: 157px;
+    border-left: 3px solid transparent;
+    background: #fff;
+    box-shadow: 0 6px 21px 0 rgba(83, 92, 105, .15);
+    box-sizing: border-box
+}
+
+.crm-report-column-funnel-modal-hidden {
+    display: none
+}
+
+.crm-report-column-funnel-modal-title {
+    display: block;
+    margin: 0 0 17px 0;
+    padding: 0 0 12px 0;
+    border-bottom: 1px solid rgba(130, 139, 149, .19);
+    font: 13px OpenSans-SemiBold, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+.crm-report-column-funnel-modal-title {
+    display: flex;
+    align-items: center
+}
+
+.crm-report-column-funnel-modal-title-icon {
+    display: inline-block;
+    margin: 0 11px 0 0;
+    width: 16px;
+    height: 16px;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2216%22%20height%3D%2216%22%3E%3Cimage%20width%3D%2216%22%20height%3D%2216%22%20x%3D%2218%22%20y%3D%2215%22%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%20transform%3D%22translate%28-18%20-15%29%22%20xlink%3Ahref%3D%22data%3Aimage/png%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOGCHvlwAAAQdJREFUOBHVU70OAUEQnmUJ0VBpNFpaoRGP4A28gPdAcZ3SY+g1EpJLKElUOo1ExD93sr655C67LiE5lUm+3DeT/WZuZnaFmlGHotkDsp5AAhVNT2fo8rGI4kAmAwZiL9NkL1J6yOC18o1qpasRMxLMVykaDLPGAd2Rch9KYMzAfQpyXF1i8gTKyXgwMm8GoT/48xa4Pxk3+/7m/XwP9AQOqlkAf9lCvlJk7Y90BwiIbbaU09fIaykCayADsF8A2kACcHYH6h9ONAKvArzwlrFGBN7NERXq+sH1kAT4BOAErK3rLcD/bMWm9/CmOOVftwZn8Svw87wAPIckwL4/D9DAxmCsYa16AXV/X3FACYX4AAAAAElFTkSuQmCC%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat
+}
+
+.crm-report-column-funnel-modal-subtitle {
+    display: block;
+    margin: 0 0 2px 0;
+    font: 11px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #a8adb4;
+    opacity: .84
+}
+
+.crm-report-column-funnel-modal-main .crm-report-column-funnel-card-subtitle {
+    font: 11px "Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+.crm-report-column-funnel-modal-content {
+    display: flex;
+    align-items: center
+}
+
+.crm-report-column-funnel-modal-content, .crm-report-column-funnel-modal-main .crm-report-column-funnel-card-info {
+    margin: 0 0 18px 0
+}
+
+.crm-report-column-funnel-modal-value {
+    font: 20px OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+.crm-report-column-funnel-modal-main .crm-report-column-funnel-card-info-value-box {
+    margin: 0 30px 0 0;
+    font: 20px OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+.crm-report-column-funnel-modal-main .crm-report-column-funnel-card-info-value-box {
+    margin: 0
+}
+
+.crm-report-column-funnel-modal-main .crm-report-column-funnel-card-info-percent {
+    font: 21px OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif
+}
+
+.crm-report-column-funnel-scale {
+    position: absolute;
+    bottom: 18px;
+    left: -44px;
+    display: flex;
+    flex: 1;
+    height: 300px;
+    border-right: 1px solid #e0e0e0
+}
+
+.crm-report-column-funnel-scale-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end
+}
+
+.crm-report-column-funnel-scale-box:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -19px;
+    display: block;
+    width: 19px;
+    height: 1px;
+    background: #e0e0e0
+}
+
+.crm-report-column-funnel-scale-item {
+    margin: 0 8px 0 0;
+    font: 10px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #808992
+}
+
+.crm-report-column-funnel-grid-user, .crm-report-column-funnel-grid-user-name {
+    display: flex;
+    align-items: center
+}
+
+.crm-report-column-funnel-grid-user {
+    margin: 14px 0
+}
+
+.crm-report-column-funnel-grid-company-icon, .crm-report-column-funnel-grid-user-icon {
+    display: inline-block;
+    margin: 0 9px 0 0;
+    width: 23px;
+    height: 23px;
+    border-radius: 100%
+}
+
+.crm-report-column-funnel-grid-user-name {
+    max-width: 100%;
+    font: bold 14px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #2066b0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.crm-report-column-funnel-grid-company .crm-report-column-funnel-grid-user-name {
+    font: 500 13px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #525c69
+}
+
+.crm-report-column-funnel-grid-company-icon {
+    display: none
+}
+
+.crm-report-column-funnel-grid-company .crm-report-column-funnel-grid-company-icon {
+    display: inline-block
+}
+
+.crm-report-column-funnel-grid-company-icon i {
+    border-radius: 0
+}
+
+.crm-report-column-funnel-grid-company .crm-report-column-funnel-grid-user-icon i {
+    display: none
+}
+
+.crm-report-column-funnel-grid-value {
+    display: inline-block;
+    margin: 18px 0
+}
+
+.crm-report-column-funnel-grid-value {
+    font: 13px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #525c69
+}
+
+.crm-report-column-funnel-grid-value-box {
+    display: flex;
+    align-items: center
+}
+
+.crm-report-column-funnel-grid-value-box:first-child {
+    margin: 0 0 5px 0
+}
+
+.crm-report-column-funnel-grid-value-box:last-child {
+    margin: 0
+}
+
+.wrap-manager-stat {
+    margin-top: 10px;
+    padding: 15px 20px 20px 20px
+}
+
+.wrap-manager-stat-title {
+    font-family: OpenSans-Regular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #333
+}
+
+.report-visualconstructor-dashboard-widget-wrapper {
+    float: none !important
+}
+
+.popup-windowGrapch {
+    position: fixed !important
+}
+
+.dop-info td {
+    padding: 8px 0 8px 16px
+}
+
+.dop-info span {
+    color: #535c70;
+    font-family: OpenSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 12px
+}
+
+.dop-info span.plan-percent-green {
+    color: green;
+    margin-left: 10px
+}
+
+.dop-info span.plan-percent-red {
+    color: #ad1a14;
+    margin-left: 10px
+}
+
+.main-grid-row.main-grid-row-body .main-grid-cell {
+    border: none
+}
+
+.plan-container .red-percent, tr .nums-percent.red-percent, .main-grid-cell-content .red-percent {
+    color: #ad1a14;
+    margin-left: 5px
+}
+
+.plan-container .green-percent, tr .nums-percent.green-percent, .main-grid-cell-content .green-percent {
+    color: green;
+    margin-left: 5px
+}
+
+.mt25 {
+    margin-top: 25px
+}
+
+.num-table {
+    padding: 10px 20px
+}
+
+.num-table span {
+    font-family: OpenSans, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: block
+}
+
+table.nums {
+    padding: 0;
+    border: none;
+    margin: 0;
+    font: 1.5vw OpenSans-Regular, "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #333
+}
+
+table.nums .subtitle-nums {
+    font: 13px "Helvetica Neue", Arial, Helvetica, sans-serif;
+    color: #a8adb4;
+    opacity: .84
+}
+
+table.nums .nums-system {
+    padding-right: 25px
+}
+
+table.nums .nums-percent {
+    padding-left: 15px;
+    padding-right: 30px
+}
+
+table.nums .nums-nums {
+    padding-right: 30px
+}
+
+.pb25 {
+    padding-bottom: 25px
+}
+
+.main-row {
+    font-weight: 600;
+    background-color: #bfbbbb !important;
+}
